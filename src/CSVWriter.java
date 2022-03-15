@@ -50,6 +50,7 @@ public class CSVWriter {
 			
 	}
 	
+	//This function sorts all of the enrollees alphabetically by last name then first name
 	public static void sortEnrollees(ArrayList<Enrollee> enrollees) {
 		Collections.sort(enrollees, new Comparator<Enrollee>() {
 		       public int compare(Enrollee e1, Enrollee e2) {
