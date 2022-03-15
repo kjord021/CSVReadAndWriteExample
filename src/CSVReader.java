@@ -75,7 +75,7 @@ public class CSVReader {
 		String insuranceCompany = currentEnrollee[4];
 		
 		for (Enrollee e : enrollees) {
-			if (e.getUserID() == currentEnrollee[0]) {
+			if (e.getUserID().equalsIgnoreCase(currentEnrollee[0])) {
 				if (e.getVersion() < newVersion) {
 					e.setFirstName(firstName);
 					e.setLastName(lastName);
