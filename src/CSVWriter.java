@@ -70,12 +70,12 @@ public class CSVWriter {
 
 		ArrayList<String> finalList = new ArrayList<String>();
 		  
-        for (String s : namesOfCompanies) {
-            if (!finalList.contains(s)) {
-                finalList.add(s);
-            }
-        }
-		
+		for (String s : namesOfCompanies) {
+		    if (!finalList.contains(s)) {
+			finalList.add(s);
+		    }
+		}
+
 		return finalList;
 	}
 	
